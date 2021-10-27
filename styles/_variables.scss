@@ -1,0 +1,78 @@
+/*========== FONTS ==========*/
+//zen antique soft
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
+//zen antique
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+/*========== shortcuts function color and screen size==========*/
+@function color($color-name){
+    @return map-get($colors,$color-name)
+};
+@mixin desktop {
+    @media(min-width: #{$desktop}){
+        @content;
+    }
+}
+@mixin desktop2 {
+    @media(max-width: #{$desktop2}){
+        @content;
+    }
+}
+@mixin desktop3 {
+    @media(min-width: #{$desktop3}){
+        @content;
+    }
+}
+
+$colors: (
+    primary: #292F36,
+    secondary:rgb(78, 205, 197),
+    darkensec:darken(rgb(78, 205, 197), 20%),
+    cream: #F7FFF7,
+    back: #f6f6f6,
+    bitter:#FF6B6B,
+    napples: #FFE66D,
+    undead: #850352,
+    plants: #785723,
+);
+
+
+$desktop:768px;
+$desktop2:950px;
+$desktop3:1130px;
+
+//Fuente
+$font-nav: 'Zen Antique Soft', serif;
+$font-body:'Zen Antique', serif;
+
+$big-big-font: 8rem;
+$big-font: 3rem;
+$h1-font-size: 2.5rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 2rem;
+$regular-font: 1.3rem;
+$small-font: .81rem;
+$smallest-font: .75rem;
+$font-size-hero: 15vw;
+$icon-font: 3rem;
+$menu-font:2rem;
+
+//spacing
+$normal-spacing:.1rem;
+$tittle-spacing:.2rem;
+
+//font weigth
+$font-media:500;
+$font-semi:600;
+
+//margins
+
+$mb-1: .5rem;
+$mb-2: 1rem;
+$mb-3: 1.5rem;
+$mb-4: 2rem;
+$mb-5: 2.5rem;
+$mb-6: 3rem;
+
+//index
+$z-tooltip:10;
+$z-fixed:100;

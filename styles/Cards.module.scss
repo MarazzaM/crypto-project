@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+.Card{
+    border: 2px solid;
+    margin-top: 10px;
+    width: 9.8rem;
+    height: 13rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: rgb(241, 239, 239);
+    box-shadow: 2px 2px 3px 1px;
+    border-radius: 5%;
+}
+
+.title{
+    margin: 0;
+}
+
