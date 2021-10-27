@@ -5,7 +5,6 @@ body {
   margin: 0;
   font-family: $font-body;
   background: color(back);
-
 }
 
 a {
@@ -21,7 +20,7 @@ a {
 .nav{
   display: flex;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 10vh;
   justify-content: space-between;
   transition: all 0.5s cubic-bezier(.68,-0.55,.27,1.55);
@@ -125,3 +124,8 @@ a {
 #c4{
   color: color(bitter);
 }
+
+.bx-message-square-error{
+  font-size: 2rem;
+}
+

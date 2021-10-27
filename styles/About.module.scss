@@ -1,0 +1,29 @@
+@import '_variables.scss';
+
+.container{
+    height: 100vh;
+}
+.title{
+    font-size: $big-font;
+    text-transform: uppercase;
+    span{
+        animation: color-change 3s infinite;
+
+    }
+    @include desktop{
+        font-size: $home-font;
+    }
+}
+.text{
+    width: 90%;
+    margin: auto;
+    max-width: 1024px;
+    font-size: $h2-font-size;
+}
+@keyframes color-change {
+    0% { color: color(secondary); }
+    25% { color: color(bitter); }
+    50% { color: color(napples); }
+    75% { color: color(secondary); }
+    100% { color: color(secondary); }
+  }

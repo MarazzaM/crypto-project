@@ -1,6 +1,6 @@
 import styles from  '../styles/Layout.module.scss'
 import Nav from './Nav'
-
+import Footer from './Footer'
 
 function Layout({children}:any) {
     return (
@@ -11,7 +11,7 @@ function Layout({children}:any) {
                 {children}
             </main>
         </div>
-        {/* footer */}
+        <Footer />
         </>
     )
 }
